@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.views.activity.FindPassActivity">
+
+    <RelativeLayout
+       style="@style/match_wrap"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageButton
+            android:id="@+id/ib_findps"
+            style="@style/wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="#fff"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            style="@style/wrap"
+            android:layout_centerInParent="true"
+            android:text="找回密码"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+       android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        style="@style/background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                style="@style/wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/bk"
+                android:text="157****9623"
+                android:textSize="17sp" />
+
+            <ImageView
+                style="@style/wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/fasong" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_findps"
+            style="@style/match_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/bk"
+            android:hint="请输入手机短信中的验证码"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" />
+
+        <RelativeLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/ll_find"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#CD0102"
+                android:orientation="horizontal" />
+
+            <TextView
+                style="@style/wrap"
+                android:layout_centerInParent="true"
+                android:text="验证"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

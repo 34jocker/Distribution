@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.views.activity.RegisterActivity">
+
+    <TextView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#3000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+           style="@style/register_tv"
+            android:text="账号"
+          />
+        <EditText
+            android:background="@null"
+            style="@style/register_et"
+            android:paddingLeft="42dp"
+            android:id="@+id/et_accout_rg"
+            android:hint="请输入您的密码"/>
+    </LinearLayout>
+    <include layout="@layout/view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/register_tv"
+            android:text="密码" />
+        <EditText
+            android:background="@null"
+            android:paddingLeft="42dp"
+            android:id="@+id/et_pass_rg"
+            android:hint="请输入您的密码"
+            style="@style/register_et"/>
+    </LinearLayout>
+    <include layout="@layout/view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/register_tv"
+            android:text="确定密码" />
+        <EditText
+            android:background="@null"
+            style="@style/register_et"
+            android:id="@+id/et_repass_rg"
+            android:hint="再次输入密码"/>
+    </LinearLayout>
+    <include layout="@layout/view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/register_tv"
+            android:text="手机号"
+       />
+        <RelativeLayout
+            android:layout_gravity="center"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@null"
+                style="@style/register_et"
+                android:paddingLeft="22dp"
+                android:id="@+id/et_phone_rg"
+                android:hint="请输入手机号"/>
+            <ImageButton
+                android:src="@mipmap/huoqu"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <include layout="@layout/view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/register_tv"
+            android:text="验证码" />
+        <EditText
+            android:background="@null"
+            android:paddingLeft="22dp"
+              style="@style/register_et"
+            android:id="@+id/et_pass"
+            android:hint="请输入您的密码"/>
+    </LinearLayout>
+    <LinearLayout
+      android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        style="@style/background"
+       android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+           style="@style/match_wrap">
+            <CheckBox
+                android:id="@+id/cb_rg"
+                style="@style/wrap"
+                />
+            <TextView
+             style="@style/wrap"
+                android:text="我已阅读并接受"
+                android:textSize="15sp"/>
+            <EditText
+                android:enabled="false"
+                android:clickable="true"
+              style="@style/wrap"
+                android:text="《用户协议》"
+                android:textColor="#CD0102"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+      style="@style/match_wrap">
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="#CD0102"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_centerInParent="true"
+                style="@style/wrap"
+                android:text="注册"
+                android:textSize="20sp"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

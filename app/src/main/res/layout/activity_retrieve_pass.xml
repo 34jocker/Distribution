@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_retrieve_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mvp.views.activity.RetrievePass">
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <ImageButton
+            android:id="@+id/ib_findps"
+            style="@style/wrap"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="#fff"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            style="@style/wrap"
+            android:layout_centerInParent="true"
+            android:text="找回密码"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/background"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/et_new_retrieve"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="新密码"
+            android:background="@mipmap/bk"/>
+        <EditText
+            android:id="@+id/et_ensure_retrieve"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="新密码"
+            android:background="@mipmap/bk"/>
+
+        <RelativeLayout
+            style="@style/match_wrap"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/ll_retrieve"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#CD0102"
+                android:orientation="horizontal" />
+
+            <TextView
+                style="@style/wrap"
+                android:layout_centerInParent="true"
+                android:text="确定提交"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
